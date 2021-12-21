@@ -1,8 +1,29 @@
 <h5>Buscar: </h5>
-<input 
+<!-- <input 
     type="text" 
     class="form-control" 
     placeholder="Buscar Gifs..."
     (keyup.enter)="buscar()"
     #txtBuscar
-/>
+/> -->
+
+<div class="input-group mb-3">
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Buscar Gifs..."
+        (keyup.enter)="buscar()"
+        #txtBuscar 
+        aria-label="Recipient's username" 
+        aria-describedby="button-addon2"
+    />
+    <button 
+        class="btn btn-danger" 
+        type="button" 
+        id="button-addon2"
+        (click)="borrarResultado()"
+        title='Se borrarán los resultados actuales'
+    >
+        X
+    </button>
+  </div>

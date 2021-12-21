@@ -26,4 +26,8 @@ export class SearchComponent {
     
     this.txtBuscar.nativeElement.value = '';
   }
+
+  borrarResultado(){
+    this.gifsService.borrarResultado();
+  }
 }

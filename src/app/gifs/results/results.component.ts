@@ -14,6 +14,4 @@ export class ResultsComponent{
   }
 
   constructor(private gifsService: GifsService) { }
-
-
 }

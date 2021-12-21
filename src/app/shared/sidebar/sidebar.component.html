@@ -3,7 +3,7 @@
     Gifs-App
   </h3>
   <hr class="text-light" />
-  <p class="text-light mt-3">Historial</p>
+  <p class="text-light mt-3" *ngIf="historial.length>0">Historial</p>
   <div class="list-group list-reset">
     <a href=# (click)='buscar(busqueda)' class="list-group-item list-group-item-action pe-auto" *ngFor="let busqueda of historial">
       {{busqueda | titlecase}}

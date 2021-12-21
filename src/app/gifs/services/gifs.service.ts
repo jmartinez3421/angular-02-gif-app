@@ -52,13 +52,17 @@ export class GifsService{
             .subscribe( (resp) => {
                 this._resultado = resp.data;
                 localStorage.setItem('lastResult', JSON.stringify(resp.data));
-                console.log(resp.data);
             } )
     }
 
     borrarHistorial(){
         this._historial = [];
         localStorage.setItem('historial', JSON.stringify(this._historial));
+    }
+
+    borrarResultado(){
+        this._resultado = [];
+        localStorage.setItem('lastResult', JSON.stringify(this._resultado));
     }
 
 }
