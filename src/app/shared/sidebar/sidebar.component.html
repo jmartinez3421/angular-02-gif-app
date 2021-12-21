@@ -3,9 +3,10 @@
     Gifs-App
   </h3>
   <hr class="text-light" />
+  <p class="text-light mt-3">Historial</p>
   <div class="list-group list-reset">
-    <a href="#" class="list-group-item list-group-item-action">
-      Dashboard
+    <a href=# (click)='buscar(busqueda)' class="list-group-item list-group-item-action pe-auto" *ngFor="let busqueda of historial">
+      {{busqueda | titlecase}}
     </a>
   </div>
 </div>

@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-4 col-sm-6 mt-3  animate__animated animate__fadeInDown" *ngFor="let item of resultados">
+        <div class="card">
+            <img [src]="item.images.downsized_medium.url" [alt]="item.title" class="card-image-top">
+            <div class="card-body">
+                <p class="card-text text-center fw-bold">
+                    {{item.title | titlecase}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
