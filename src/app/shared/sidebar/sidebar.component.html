@@ -9,4 +9,12 @@
       {{busqueda | titlecase}}
     </a>
   </div>
+  <div class="d-grid gap-1 mt-2" *ngIf="historial.length>0">
+    <button 
+      class="btn btn-danger"
+      (click)='borrarHistorial()'
+    >
+      Borrar Historial
+    </button>
+  </div>
 </div>

@@ -17,4 +17,8 @@ export class SidebarComponent{
     this.gifsService.buscarGifs(query);
   }
 
+  borrarHistorial(){
+    this.gifsService.borrarHistorial();
+  }
+
 }

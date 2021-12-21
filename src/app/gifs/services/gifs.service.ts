@@ -56,4 +56,9 @@ export class GifsService{
             } )
     }
 
+    borrarHistorial(){
+        this._historial = [];
+        localStorage.setItem('historial', JSON.stringify(this._historial));
+    }
+
 }
